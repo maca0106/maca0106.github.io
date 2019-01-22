@@ -1,0 +1,71 @@
+<!-- html is called the root tag, as all html code resides within the tag. Without the html tag, none of this will function. -->
+<html>
+<!-- This is a comment. Hello Fren. -->
+<!-- this is another comment. Use these to help you figure out what you were doing and to make your code easier to read. -->
+<!-- Sublime text shortcut to create a shortcut is ctr and / . This way, you don't have to type the entire tag out yourself. -->
+<!-- to write any child tag, make sure to use indentation which is archived by pressing tab once before writing the child tag. A child tag is any tag that branches off another, such as body here being branched off html. The indentation makes this idea clearer, and looks much nicer as a bonus. -->
+	<head>
+		<!-- The head will contain information about the document, such as title, description or keywords. Any data that is not considered document content goes here. -->
+		<meta charset="utf-8">
+		<!-- This is a required tag for full marks. It exists so that the browser can recognize multiple characters or languages. This is one of the few tags that closes itself - no need for the </> -->
+		<!-- Meta tags allow for the property and sspecify the value --> 
+		<!-- here 'charset' is the property and "utf-8" is the value. -->
+		<meta name="Author" content="Shantal Macarthur">
+		<!-- This version tells the document who the author is, Name specifies the property(Type) and content is the actual value(What the actual content is). Charset is basically required for it to work even outside of professor's expectations, as without it there can be issues with accents or names in different languages. -->
+		<title> Week 2  - HTML intro </title>
+		<!-- The title applies to the tab, not the page itself. -->
+		<!-- NOTE: Title always goes under head like this, no where else. It's picky. He will also take marks off if this title is not present.--> 
+
+	</head>
+	<body>
+		<!-- Body tag is main container for the document. This is where the actual main content goes, such as text and the like. -->
+		<h1>Week 1 - Intro to HTML</h1>
+		<!-- This is a heading tag, which is used to create a heading for the page. Mostly a formating thing to make it look nice again. This only goes in body, as this is the heading for the content, not the title for the page itself. Multiple headings are fine. -->
+		<!-- Heading tags go from <h1> to <h6>. The variation is based on importance  -->
+			<!--NOTE: <h1> is the highest importance, down to h6 which is the least important. Usually these will go in order so <h1> is the top. You probably won't go past <h4>, but good to know  that it exists. -->
+		<h2> Basic HTML Tags</h2>
+		<!-- Heading tags are also block level tags. -->
+		This is my content, yay!
+	<!-- Any line breaks that are specified outside of the block level will not be rendered and take effect. -->
+
+		Moooaarr content. And proof of the need for tags.
+		<p>
+			<!-- Paragraph tag. This sets your text up to look like a nice proper paragraph and not a page scribble. -->
+			This is a lovely, lovely paragraph. Coffee is good. I like coffee.
+			<!-- Paragraph tags are an example of block level elements - it builds off another tag. It also forces any following lines onto the next line, regardless of if <p> is used or not. They will be on the same line unless br is used to break the tags up. -->
+		</p>
+		<p>
+			This is another paragraph. This is getting out of hand. Now there are two of them!
+		</p>
+		<p>
+			This is the first line.
+			<br>
+			<!-- Break or nr tag is used to properly break lines up without having to constantly make new paragraphs.  -->
+			<!-- The number of tags will specify the number of line breaks. -->
+			<br>
+			This is the second line. They're multiplying!
+		</p>
+<!-- ul tag is one of the tags used to make lists in an html document. It is short for unordered list, which would create a list with bullet points.   -->
+		<ul>
+			<li> List element 1</li>
+			<li> List element 2</li>
+			<!-- <li> is used to make the actual list content in the html tag. -->
+			<!-- NOTE: Must be a child tag of ul to actually work and render. -->
+		</ul>
+		<ol>
+			<!-- This is an ordered list. Same thing as <li> but with slightly less heresy and a little more number. Still requires <li> to function. -->
+				<li>Ordered List 1 </li>
+				<li>Ordered List 2</li>
+				<li>
+					<!-- List elements can use any block elements as their children via suprise adoption.  -->
+					<p>This is a <strong>paragraph</strong> inside a list element. Ooh fanceh!</p>
+					<!-- <strong> is used to empower your text with the power of bold, while also increasing its relevance and importance. -->
+						<!-- Side note as I reminded myself while typing, don't try and use the comment short cut mid line - will comment out the line. Works great while testing for errors, not so much when trying to make a note for myself. -->
+					<p>This is another paragraph. The word paragraph is now dead. <strong>Long live the king.</strong> </p>
+				</li>
+		</ol>
+
+
+	</body>
+</html>
+<!-- These close the tags. Without closing it, the whole thing will keep running which is less then ideal for obvious reasons. 
