@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- Declaring the Doctype and starting the HTML program. -->
+<html>
+<!-- Opening the Program head. -->
+<head>
+	<meta charset="utf-8">
+	<!-- Allowing for multiple languages to spruce this all up-->
+	<meta name="Author" content="Shantal Macarthur">
+	<!-- Putting my name on things. -->
+	<title>Assignment 2 - Advanced HTML</title>
+	<!-- Titling the tag, then adding keywords for the crawlers to find. -->
+	<meta name="keywords" content="HTML, HTML5, Advanced HTML, Assignment, Images">
+	<style type="text/css">
+	<!-- .tab { margin-left: 40px; }-->
+	/*Creating a tab for use in later sections, followed by a pair of unique underlines*/
+</style>
+<style>
+u.dotted{
+	border-bottom: 1px dashed #999;
+	text-decoration: none; 
+}
+</style>
+<style>
+    u.dash{
+    	border-bottom: 1px dashed #125;
+    	text-decoration: none; 
+    }
+</style>
+</head>
+<!-- Closing the head of the program and opening the body-->
+<body>
+	<section id="part1">
+		<!-- This is the body of the main program, seperated into categories to be easier to read. -->
+		<header id="Programtitle">	<h1>Assignment 2</h1> </header>
+		<header id="list"></header><h2>Employee List</h2> 
+		<!-- Creating a table to organzie the information about the employees. -->
+		<table border = "1">
+			<!-- Creating a table and first row of information -->
+			<tr>
+				<th align="center">Id</th>
+				<th align="center">Name</th>
+				<th align="center">email</th>
+			</tr>
+			<tr>
+				<!-- Creating the Second row of information -->
+				<td align="center">1</td>
+				<td align="center">John</td>
+				<td align="center">john@fakemail.com</td>
+			</tr>
+			<tr>
+				<!-- Creating the third row of information -->
+				<td align="center">2</td>
+				<td align="center">sam</td>
+				<td align="center">sam@fakemail.com</td>
+			</tr>
+			<tr>
+				<!-- Creating the fourth row -->
+				<td align="center">1</td>
+				<td align="center">Bob</td>
+				<td align="center">bob@fakemail.com</td>
+			</tr>
+			<tr>
+				<!-- Fith row -->
+				<td align="center">1</td>
+				<td align="center">Jack</td>
+				<td align="center">jack@fakemail.com</td>
+			</tr>
+			<tr>
+				<!-- Sixth row -->
+				<td align="center">1</td>
+				<td align="center">rob</td>
+				<td align="center">Rob@fakemail.com</td>
+			</tr>
+			<tr>
+				<!-- Creating the final piece of the table -->
+				<td colspan = "3">All of the above are Division Heads </td>
+			</tr>
+		</table>
+	</section>
+	<!-- Closing the Table and the section-->
+	<section id="part2">
+		<!-- Starting a new section due to topic change, creating a header. -->
+		<header id="Images">
+			<h3>Animals</h3>
+		</header>
+		<article class="image area" id="animals">
+			<!-- Creating space within the section for the image series and explanation -->
+			<img src="img/elephant.jpg" width="300" alt="Elephant" height="200">
+			<p>This is an Elephant. </p>
+			<img src="img/lion.jpg" width="300" alt="Lion" height="200">
+			<p>This is a lion. </p>
+			<img src="img/snake.jpg" width="300" alt="Snake" height="200">
+			<p>This is a snake. </p>
+			<img src="img/whale.jpg" width="300" alt="Whale" height="200">
+			<p>This is a Whale. </p>
+			<img src="img/hawk.jpg" width="300" alt="Hawk" height="200">
+			<p>This is a Hawk. </p>
+		</article>
+		<!-- Ending the article section for images -->
+	</section>
+	<section id="htmlentities">
+		<header id="entities"> </header>
+		<h3>HTML Entities</h3>
+		<!-- Recalling previous header, used for images and bringing it down to keep the format suggested in the assignment for this heading -->
+		<article>
+			<!-- Demonstrating different entities -->
+			<p>Non Breaking Space: &#160;</p>
+			<p>&#38; -	Ampersand:</p>
+			<p>&#163; - Pound:</p>
+			<p>&#169; - Copyright:</p>
+		</article>
+	</section>
+	<section id="specialtags">
+		<!-- Start of special tags and the use of the style classes created earlier. -->
+		<p>Coffee</p>
+		<p class="tab">-black hot drink</p>
+		<p>Milk</p>
+		<p class="tab">-white cold drink</p>
+		<u class="dotted">HTML</u>
+		<br>
+		<article id="st-abbr" class="special-tag">
+			<!-- Getting a seperate id and class -->
+            <p><abbr title="Cascading Style Sheets">CSS</abbr></p>
+        </article>
+	</section>
+	<article class="special-tag" id="details">
+		<!-- Creating a section that can be extended out for further details. -->
+		<details> 
+			<summary>What is a mobile phone?</summary>
+			<p>A mobile phone, cell phone or hand phone, sometimes shortened to simply mobile, cell or just phone, is a portable telephone that can make and receive calls over a radio frequency link while the user is moving within a telephone service area. </p>
+			<!--  -->
+		</details>
+	</article>
+	<footer>
+		<!-- Creating the Footer to finish off the program, along with the hidden comments. -->
+		<article>
+			<h4> Hidden Comment:</h4>
+			<!-- I really struggeled with this hidden comment portion and aligning the text for the tables/ abbr for the line. Could we get more examples posted please? The Hidden comment didn't make a whole lot of sense wile the alignment did not work in CSS without creating a border, and I was unable to find what part of the alignment made it. abbr as a tag made no sense to me either, and I guessed for most of it here.-->
+		</article>
+	</footer>
+</body>
+<!-- Closing the body -->
+</html>
+<!-- Closing the HTML -->
