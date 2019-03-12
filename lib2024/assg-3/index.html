@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- Allowing for multiple languages to spruce this all up-->
+	<meta name="Author" content="Shantal Macarthur">
+	<!-- Putting my name on things. -->
+	<title>Assignment 3 - HTML Forms</title>
+	<!-- Titling the tag, then adding keywords for the crawlers to find. -->
+	<meta name="keywords" content="HTML, HTML5, Advanced HTML, Assignment, Forms">
+</head>
+<body>
+	<div id="wrapper" class="wrapper">
+		<!-- Overall div to keep things neat and tidy -->
+	<form action="somepage.php" method="get">
+	<div id="web" class="form-elm">
+		<!-- Website section of the assignment -->
+		<label for="ur">Enter your website URL:</label>	
+			<input type="url" name="ur" id="ur" ><br>
+	</div>
+	<div id="email-container" class="form-elm">
+		<label for="email">Email</label>
+		<!--Creating the email form and section -->
+		<input type="email" name="email" id="email" required value="placeholder@place.com">
+	</div>
+	<div id="phone" class="form-elm">
+		<!-- Division for the phone number -->
+		<label for="mobile"> Please submit your phone number</label>
+		<input type="number" id="mobile" name="num" min="0" max="20" required><br>
+	</div>	
+	<div id="pass-container" class="form-elm">
+		<label for="pass">Password</label>
+		<input type="password" name="pass" id="pass" required>
+	</div>
+	<div id="country-drop-container" class="form-elm">
+		<!-- Drop down menu for Country -->
+		<h3>Country of Origin:</h3>
+		<label for="country">Select your Country if you are outside the provinces:</label>
+		<select name="country" id="country">
+			<option value="afg">Afghansitan</option>
+			<option value="ken">Kenya</option>
+			<option value="wales">Wales</option>
+			<option value="zim">Zimbabwe</option>
+			<option value="pol">Poland</option>
+			<option value="us">United States</option>
+			<option value="om">Oman</option>
+			<option value="fij">Fiji</option>
+			<option value="greece">Greece</option>
+			<option value="oth">Other,or from the territories of Canada</option>
+		</select>
+	</div>
+	<div id="province-drop-container" class="form-elm">
+		<!-- Drop down menu for Province -->
+		<h3>Province of Origin:</h3>
+		<label for="province-of-origin">Province:</label>
+		<select name="province-of-origin" id="province-of-origin">
+			<option value="alberta">Alberta</option>
+			<option value="bc">British Columbia</option>
+			<option value="manitoba">Manitoba</option>
+			<option value="nb">New Brunswick</option>
+			<option value="nl">Newfoundland and Labrador</option>
+			<option value="ns">Nova Scotia</option>
+			<option value="ontario">Ontario</option>
+			<option value="pei">Prince Edward Island</option>
+			<option value="quebec">Quebec</option>
+			<option value="saskatchewan">Saskatchewan</option>
+		</select>
+	</div>
+	<div id="city-container" class="form-elm">
+		<label for="City">City</label>
+		<!-- Adding the city field-->
+		<input type="text" name="City" id="City" required placeholder="Enter your City here">
+	</div>
+	<div id="adress-container" class="form-elm">
+		<label for="Address">Address</label>
+		<!-- Adding Address-->
+		<input type="text" name="Address" id="Address" required placeholder="Enter your Address here">
+	</div>
+	<div id="post-container" class="form-elm">
+		<!-- Starting the postal code field -->
+		<label for="PostalCode">Postal Code</label>
+		<input type="text" name="PostalCode" id="PostalCode" required placeholder="Enter your Postal Code here">
+	</div>
+	<!-- Ending postal code field, starting names next -->
+	<div id="first-name-contained" class="form-elm">
+		<label for="Firstname">First Name</label>
+		<input type="text" name="Firstname" id="Firstname" required placeholder="Enter your First Name Here">
+	</div>
+	<!-- Creating a section for the First Name, with placeholder text added to make it easier on the user. -->
+	<div id="last-container" class="form-elm">
+		<label for="LastName">Last Name</label>
+		<!-- Adding Last Name field -->
+		<input type="text" name="LastName" id="LastName" required placeholder="Enter your Last Name here">
+	</div>
+	<div id="date" class="form-elm">
+		<!-- Creating a division for the date of birth -->
+		<label for="dte">What is your date of birth?</label>
+		<input type="date" name="dte" id="dte" required><br>
+	</div>		
+	<div id="gender-container" class="form-elm">
+		<p>What is your gender?</p>
+			<label for="Female">
+				<input type="radio" name="gender-form" id="Female" value="Female">
+					Female
+			</label>
+			<label for="Male">
+				<input type="radio" name="gender-form" id="Male" value="Male">
+				Male
+			</label>
+			<label for="Other">
+				<input type="radio" name="gender-form" id="Other" value="Other">
+				Other to be specified in intro text
+			</label>
+	</div>	
+<div id="hobbies-container" class="form-elm">
+	<h3>What are your hobbies or Intrests?:</h3>
+	<!-- Creating the hobbies and interests category. As I am currrently unsure what kind of application all this info will be used for, I put a few general hobbies in rather then a large number of detailed ones -->
+		<label for="art">Art</label>
+			<input type="checkbox" name="hobbies" id="art" value="art"> <br>
+		<label for="reading">Reading</label>
+			<input type="checkbox" name="hobbies" id="reading" value="reading"> <br>
+		<label for="video">Video Games</label>
+			<input type="checkbox" name="hobbies" id="video" value="video"> <br>
+		<label for="film">Film and Tv</label>
+			<input type="checkbox" name="hobbies" id="film" value="film"> <br>
+	</div>
+	<div id="sum-container" class="form-elm">
+		<!-- Creating a division for the textsummary -->
+		<label for="summary">Summary</label>
+			<textarea name="summary" id="summary" placeholder="Enter summary here" required> 
+				Introduce yourself here!
+			</textarea>
+	</div>	
+	<!-- Closing the section for all the text forms -->
+	<div id="button">
+		<!-- Final Div so the Buttons are properly organized -->
+		<button type="submit">Submit</button>
+		<button type="reset">Reset</button>
+	</div>
+</form>
+	</div>
+</body>
+</html>
+<!-- Closing the program -->
+
