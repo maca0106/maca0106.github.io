@@ -1,0 +1,152 @@
+ /*http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS clearfix*/
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*Header CSS created*/
+
+
+header {
+	background: #7cc576;
+	padding: 18px;
+	width: 100%;
+	box-sizing: border-box;
+	margin-right: 40px;
+	width: 100%;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: 'Germania One', cursive;
+}
+
+.home {
+	float:left;
+	text-orientation: center;
+	position:absolute;
+	height: 75px;
+	width: 75px;
+	background: #6dcff6;
+	margin-left: 15px;
+	/*This and the following boxes are not going across for some reason*/
+}
+
+.about {
+	float:left;
+	text-orientation: center;
+	height: 75px;
+	width: 75px;
+	background: #6dcff6;
+	margin-left: 15px;
+}
+
+.contact {
+	float:left;
+	text-orientation: center;
+	height: 75px;
+	width: 75px;
+	background: #6dcff6;
+	margin-left: 15px;
+}
+
+.work {
+	float:left;
+	text-orientation: center;
+	height: 75px;
+	width: 75px;
+	background: #6dcff6;
+	margin-left: 15px;
+}
+
+/*Style formating for titles*/
+.title {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Merriweather', serif;
+}
+/*Creating a sidebar*/
+.sidebar {
+  height: calc(length-50%); 
+  width: 160px; 
+  float: right;
+  position:absolute;
+  right:70px;
+  bottom:670px;
+  top:70px;
+  box-sizing: border-box;
+  /*Needs to be moved just below the header on the right side, as is it's running into text.*/
+}
+
+.logo {
+	float: left;
+	padding: 45px;
+	box-sizing: border-box;
+	background: #7cc576;
+/*Logo created*/
+}
+
+body {
+	/*Adding a background to the body of the program*/
+  background-image: url("https://images.pexels.com/photos/1279813/pexels-photo-1279813.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+/*footer style*/
+footer {
+	background: #7cc576;
+	padding: 15px;
+	width: 100%;
+	box-sizing: border-box;
+	bottom: -190px;
+	position:absolute;
+}
+
