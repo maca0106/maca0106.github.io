@@ -1,0 +1,141 @@
+/*http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS clearfix*/
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/************************
+		MOBILE FIRST
+************************/
+
+/*Creating the mobile styles for the html first.*/
+.col-main, .col-footer, img {
+	width:100%;
+}
+
+/* Header styles */ 
+header {
+	background: #757575;
+
+}
+
+/*Logo*/
+.logo {
+	float: left;
+	width:100px;
+	padding: 15px;
+	box-sizing: border-box;
+	background: #1976D2;
+	/*box-sizing border box makes the width adjust according to padding*/
+}
+
+/*Desktop Navigation bar*/
+.desktop-nav {
+	float: right;
+	width: calc(100% - 100px);
+	display: none;
+	max-width: 600px;
+}
+
+.desktop-nav ul {
+	width:100%;
+}
+
+.desktop-nav li {
+	box-sizing: border-box;
+	width: 33%;
+	float: left;
+	background: #F44336;
+}
+
+.main-nav a {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+}
+
+
+.ham {
+	float: right;
+	background: #BBDEFB;
+}
+
+/*Mobile navigation*/
+.mobile-nav {
+	width:100%;
+	clear: both;
+}
+
+.mobile-nav-container {
+	position: relative;
+	clear: both;
+}
+
+.mobile-nav li {
+	box-sizing: border-box;
+	width:100%;
+	padding: 10px;
+	background: #FFEB3B;
+	border-bottom: 2px solid #121212;
+
+}
+
+
+.body {
+	/*Adding a background to the body of the program*/
+  background-image:url(img/background.png);
+}
+}
