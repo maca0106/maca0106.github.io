@@ -74,10 +74,8 @@ header {
 /*Logo*/
 .logo {
 	float: left;
+	font: roboto;
 	width:100px;
-	padding: 15px;
-	box-sizing: border-box;
-	background: #1976D2;
 	/*box-sizing border box makes the width adjust according to padding*/
 }
 
@@ -128,14 +126,62 @@ header {
 	box-sizing: border-box;
 	width:100%;
 	padding: 10px;
-	background: #FFEB3B;
-	border-bottom: 2px solid #121212;
+
+}
+
+header {
+	background: white;
+	width: 100%;
+	font-size: 15px;
+	font-weight: bold;
+}
+h3 {
+	color: #72a9ae;
+}
+
+.logo {
+	font-size: 15px;
+	font-weight: bold;
+	font-color: green;
+
+}
+
+.home {
+	float:left;
+	text-orientation: center;
+	height: 15px;
+	width: 100%;
+	background: #72a9ae;
+}
+
+.image {
+	height: calc(length-65%); 
+  width: 160px; 
+  float: right;
+  position:absolute;
+  right:70px;
+  bottom:670px;
+  top:70px;
+  box-sizing: border-box;
 
 }
 
 
-.body {
+.table {
+	border: 1px solid black;
+}
+
+.main {
 	/*Adding a background to the body of the program*/
-  background-image:url(img/background.png);
+  background-image:url(../img/dust_scratches.png);
+  font: CarroisGothic-Regular
 }
+
+
+.footer {
+	background: grey;
+	padding: 15px;
+	width: 100%;
+	box-sizing: border-box;
+	position:absolute;
 }

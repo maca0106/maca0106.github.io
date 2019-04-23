@@ -1,25 +1,160 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>
+	<title>Final Assignment - Website</title>
+	<!-- Titling the index, then adding keywords for the crawlers to find. -->
 	<meta charset="utf-8">
 	<!-- Allowing for multiple languages to spruce this all up-->
 	<meta name="Author" content="Shantal Macarthur">
 	<!-- Putting my name on things. -->
-	<title>Final Assignment - Website</title>
-	<!-- Titling the index, then adding keywords for the crawlers to find. -->
 	<meta name="keywords" content="HTML, HTML5, Final, CSS,Javascript, mockup">
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<!-- Importing stylesheet -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	<!-- Font awesome style sheet -->
+	<link rel="stylesheet" href="https://www.fontsquirrel.com/fonts/carrois-gothic?filter%5Bdownload%5D=local&filter%5Blicense%5D%5B0%5D=web&filter%5Btags%5D%5B0%5D=paragraph">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<!-- Importing stylesheets and fonts -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	</title>
 </head>
 <body>
-	<header class="main clearfix" id="head">
+	<header class="main clearfix" >
 		<!-- Starting header -->
-		
+		<h3 class="Logo">My Logo</h3>
+		<br>
+		<section class="home"><span>Home  About	Schedule Portfolio Contact  </span></section>
+		</ul>
 	</header>
-
-	<main class="body">Hi</main>
+	<main class="main">
+		<h3>About</h3>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut porttitor leo a diam sollicitudin. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Eget duis at tellus at urna condimentum mattis. Convallis tellus id interdum velit. Mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. 
+		<aside class="image"><img src="img/meow.jpeg" alt="Cat image" style="width: 75%"></aside>
+		<h3>Schedule</h3>
+			<table class="table">
+				<!-- Starting schedule table -->
+				<tr>
+					<th>Time</th>
+					<th>Monday</th>
+					<th>Tuesday</th>
+					<th>Wednesday</th>
+					<th>Thursday</th>
+					<th>Friday</th>
+				</tr>
+				<tr>
+					<th>09:00-11:00</th>
+					<th>Communications 1</th>
+					<th>Client Services</th>
+					<th>Special Collections</th>
+					<th>Directed Research Seminar</th>
+					<th>Client Services</th>
+				</tr>
+				<tr>
+					<th>11:00-12:30</th>
+					<th>Reference</th>
+					<th>Internet App</th>
+					<th>Library Software</th>
+					<th>French</th>
+					<th>Reference</th>
+				</tr>
+				<tr>
+					<th>14:00-15:00</th>
+					<th>Acquisitions</th>
+					<th>General elective</th>
+					<th>Marketing</th>
+					<th>Emerging Library Tech</th>
+					<th>Library Software</th>
+				</tr>
+				<tr>
+					<th>15:30-17:30</th>
+					<th>French</th>
+					<th>French</th>
+					<th>Acquisitions</th>
+					<th>Subject Analysis</th>
+					<th>Internet App</th>
+				</tr>
+			</table>
+			<!-- Ending Schedule table -->
+		<h3>Edit Profile</h3>
+		<!-- Profile section -->
+			<section class="form-value-transfer clearfix">
+				<form id="form" action="submit.php" method="post">
+					<p>
+						<label>Name</label>
+						<!-- Name of user -->
+						<input type="text" name="name" id="name">
+					</p>
+					<p>
+						<label>Email</label>
+						<!-- Email of user -->
+						<input type="email" required name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+					</p>
+					<p>
+						<label>Adress</label>
+						<!-- Adress -->
+						<input type="text" name="adress" id="adress">
+					</p>
+					<div id="Province" class="form-elm">
+						<!-- Province drop down -->
+					<select name="prov" id="prov">
+						<option value="on">Ontario</option>
+						<option value="pe">Prince Edward Island</option>
+						<option value="qc">Québec</option>
+						<option value="sk">Saskatchewan</option>
+						<option value="yt">Yukon</option>
+						<option value="ab">Alberta</option>
+						<option value="bc">British Colombia</option>
+						<option value="mb">Manitoba</option>
+						<option value="nb">New Brunswick</option>
+						<option value="nl">Newfoundland and Labrador</option>
+						<option value="ns">Nova Scotia</option>
+						<option value="nt">Northwest Territories</option>
+						<option value="nu">Nunavut</option>
+						<option value="selec" selected="">Please select your Province</option>
+					</select>
+					</div>
+					<p>
+						<label>Postal Code</label>
+						<!-- Postal Code -->
+						<input type="text" required="" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" value="" name="pc" id="pc" placeholder="A0A 0A0">
+					</p>
+					<button type="submit">Submit</button>
+				</form>
+				<div id="results">
+					<h2>Show values</h2>
+					<p >Name: <span id="name_result"></span></p>
+					<p >Postal Code: <span id="pc_result"></span></p>
+					<p >Email: <a href="#" id="email_result"></a></p>
+				</div>
+			</section>
+	</main>
+	<footer class="footer">
+		<!-- Starting footer -->
+		<span>Quick Links</span>
+		<ul>
+  			<li>Schedule</li>
+  			<li>About</li>
+  			<li>Portfolio</li>
+  			<li>Contact</li>
+		</ul>
+		<span>Follow us on  Social Media</span>
+		<!-- Links go here;facebook,twitter and youtube -->
+		<span class="fa-stack fa-lg">
+			<a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+		</span>
+		<span class="fa-stack fa-lg">
+  			<a href="https://twitter.com/"><i class="fa fa-circle-thin fa-stack-2x"></i>
+  			<i class="fa fa-twitter fa-stack-1x"></i> </a>
+		</span>
+		<span>
+			<a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+		</span>
+		<span>Adress</span>
+		<ul>
+			<li>1385 Woodroffe Ave,</li>
+			<li>Nepean,ON K2G 1V8</li>
+			<li>Canada</li>
+		</ul>
+		<!-- Need these to go across if at all possible -->
+	</footer>
 </body>
 </html>
+<!-- Ending program -->
